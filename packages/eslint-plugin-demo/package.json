@@ -1,0 +1,22 @@
+{
+  "name": "@ts-lib-demo/eslint-plguin-demo",
+  "version": "1.0.0",
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "scripts": {
+    "build": "rimraf ./dist && rollup -c"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./*": "./*"
+  },
+  "devDependencies": {
+  }
+}
